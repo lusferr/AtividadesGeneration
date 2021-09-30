@@ -1,0 +1,188 @@
+programa
+ {
+	
+	funcao inicio()
+ {		
+ 		//Autor: Luis Fernando campinas-turma 35	
+		//EXERCICIO 1
+		real anos, meses, dias, anoAtual, anoNascimento, total, mesAtual
+
+		anoAtual = 2021
+		mesAtual = 9
+
+		escreva ("Em que ano você nasceu? ")
+		leia (anoNascimento)
+
+		escreva ("\nEm que mês?")
+		leia (meses)
+
+		escreva ("\nqual o dia?")
+		leia (dias)
+
+		total = ( anoAtual - anoNascimento - meses/12 - dias/365 )
+		escreva ("Você tem aproximadamente " + total*365 + " dias vividos."
+programa {
+	
+	funcao inicio() {
+		//Exercicio 2
+	
+		real dias, anos
+		
+		escreva ("quantos dias de vida você tem?")
+		leia (dias)
+		
+		escreva ("Seus dias são iguais a " + dias/365 + " anos")
+	}
+}
+
+programa {
+	
+	funcao inicio() {
+		//EXERCICIO 3
+		real anos, meses, dias, segundos, minutos
+
+	
+		escreva ("Quantos segundos durou o evento?")
+		leia (segundos)
+
+		escreva ("Quantos minutos durou o evento?")
+		leia (minutos)
+
+		escreva ("Seu evento durou " + segundos/60 + "minutos")
+		escreva ("Seu evento durou " + minutos + "minutos")
+		
+	}	
+}
+
+programa {
+	
+	funcao inicio() {
+		//Exercicio 4
+	
+		inteiro a, b, c, r, s, d
+
+		escreva ("qual o primeiro número? ")
+		leia (a)
+
+		escreva ("qual o segundo número? ")
+		leia (b)
+
+		escreva ("qual o terceiro número? ")
+		leia (c)
+
+		r = ((a + b)*2)
+		s = ((b + c)*2)
+		d = ((r + s) / 2)
+
+		escreva ("D é igual a: " + d)
+		
+	}
+}
+
+programa {
+	//EXERCICIO 5
+	funcao inicio() {
+		
+		real a, b, c, media
+		
+		a = 2
+		b = 3
+		c = 5
+		
+		media = ((a + b + c) / 3)
+
+		escreva ("Média final do aluno é: " + media)
+
+
+		
+	}
+}
+
+programa {
+	//EXERCICIO 6
+	inclua biblioteca Matematica --> mat
+	funcao inicio() {
+		
+		real p1, p2, x1, x2, y1, y2, d, radicando
+
+		escreva ("Escreva as coordenadas do primeiro ponto: ")
+		
+		escreva ("\nPrimeiro número: ")
+		leia (x1)
+		
+		escreva ("\nSegundo número: ")
+		leia (y1)
+		
+		escreva ("Escreva as coordenadas do segundo ponto: ")
+		
+		escreva ("\nPrimeiro número: ")
+		leia (x2)
+
+		escreva ("\nSegundo número: ")
+		leia (y2)
+
+
+		radicando = (((x2 - x1) * 2) + ((y2 - y1) * 2))
+		d = mat.raiz(radicando, 2.0)
+
+		escreva ("o resultado é: " + d)
+	
+	}
+}
+
+programa {
+	//Exercicio 7 - escreva um algoritmo que lê os coeficientes a,b, c, d, g e f E calcule os valores de x e y
+	funcao inicio() {
+		
+		real a, b, c, d, f, g, x, y
+
+		escreva("Digite o valor de a: ")
+		leia (a)
+		
+		escreva("Digite o valor de b: ")
+		leia (b)
+		
+		escreva("Digite o valor de c: ")
+		leia (c)
+				
+		escreva("Digite o valor de d: ")
+		leia (d)
+			
+		escreva("Digite o valor de g: ")
+		leia (g)
+
+		escreva("Digite o valor de f: ")
+		leia (f)
+		
+
+		x = ((c*g) - (b*f)) / ((a*g) - (b*d)) 
+
+		y = ((a*f) - (c*d)) / ((a*g) - (b*d))
+
+		escreva ("X é igual a: " + x)
+		escreva ("\nY é igual a: " + y)
+
+			
+	}
+}
+programa
+ {
+	
+	funcao inicio()
+ {
+		//EXERCICIO 8
+		real custoFabrica, pDistribuidor, pImpostos, custo, custoFinal
+
+		pDistribuidor = 0.28
+		pImpostos = 0.45
+
+		escreva ("Qual o custo de fábrica? ")
+		leia (custo)
+
+		custoFinal = (custo + (custo * pDistribuidor) + (custo * pImpostos))
+		escreva ("O custo ao consumidor é " + custoFinal) 
+			
+	
+		
+	}
+}
