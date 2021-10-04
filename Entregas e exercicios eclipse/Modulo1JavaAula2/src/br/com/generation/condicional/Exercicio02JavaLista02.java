@@ -9,22 +9,32 @@ public class Exercicio02JavaLista02 {
 		
 		int numero1, numero2, numero3;
 
-		System.out.println("Digite o 1° número: ");
-		numero1 = ler.nextInt();
-		System.out.println("Digite o 2° número: ");
-		numero2 = ler.nextInt();
-		System.out.println("Digite o 3° número: ");
+		System.out.println("Digite o 3 números: ");
+		numero1 = ler.nextInt();	
+		numero2 = ler.nextInt();	
 		numero3 = ler.nextInt();
 		
-		if (numero1 <= numero2 && numero1 <= numero3 && numero2 <= numero3) {
-			System.out.println("Ordem dos números" + numero1 + numero2 + numero3 );
+		if (numero1 <= numero2 && numero2 <= numero3) {
+			System.out.println("Ordem dos números" + " " + numero1 + " " +  numero2 + " " + numero3);
 		}
-		if (numero2 <= numero1 && numero2 <= numero3 && numero1 <= numero3) {
-			System.out.println("Ordem dos números" + numero2 + numero3 + numero1 );
+		else if (numero1 <= numero3 && numero3 <= numero2) {
+			System.out.println("Ordem dos números" + " " +numero1 + " " +numero3 + " " + numero2);
 		}
-		if (numero3 <= numero2 && numero3 <= numero2 && numero2 <= numero1) {
-			System.out.println("Ordem dos números" + " " + numero3+ " " +numero2 + " " +numero1 );
+		else if (numero2 <= numero1 && numero1 <= numero3 ) {
+			System.out.println("Ordem dos números" + " " + numero2+ " " +numero1 + " " +numero3);
 		}
+		else if (numero2 <= numero3 && numero3 <= numero1 ) {
+			System.out.println("Ordem dos números" + " " + numero2+ " " +numero3+ " " +numero1);
+		}
+		else if(numero3 <= numero1 && numero1 <= numero2 ) {
+			System.out.println("Ordem dos números" + " " + numero3+ " " +numero1 + " " +numero2);
+		}
+		else {
+			System.out.println("Ordem dos números" + " " + numero3+ " " +numero2 + " " +numero1);
+		}
+		
+		
+		
 		
 		ler.close();
 		
